@@ -2,6 +2,7 @@
 ## output 1 = ["test" , "kiran" ,"kumar"]
 ## output 2 = ["gmail" , "yahoo"]
 
+a = ["test@gmail.com" , "kumar@yahoo.com" , "kiran@gmail.com"]
 
 a = {"name1" : "test", "name2" : "kumar", "name3" : "kiran"}
 a_str = []
@@ -24,13 +25,25 @@ print(b_str)
 
 
 a = ["apple", "apple", "mango", "mango", "orange"]
-b = ["2", "2", "1"]
+d = {}
+d_keys = d.keys()
+for i in a:
+    if i not in d_keys:
+        d[i] = a.count(i)
+print(d)
 
-print(type(a))
-print(isinstance(a,list))
-print(list(a))
-print(set(a))
-print(list(set(a)))
+first_list = []
+second_list = []
+for i in a:
+    if i not in first_list:
+        first_list.append(i)
+    else:
+        second_list.append(i)
+print(first_list)
+print(second_list)
+
+
+
 
 
 
