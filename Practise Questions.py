@@ -66,21 +66,15 @@ print(a)
 for i in a:
     print(i)
 
-i = i.split('@')
-print(i)
-b=[i.split('@') for i in a]
+b = [i.split('@') for i in a]
 print(b)
 
-i=0
-for i in b:
-    print(b)
-
-b = [i.split('@')[0] for i in a]
-print(b)
-
-c = [i.split('@')[1] for i in a]
+c = [i.split('@')[0] for i in a]
 print(c)
-print(set(c))
+
+d = [i.split('@')[1] for i in a]
+print(d)
+print(set(d))
 
 '''
 def sort_algo(inp, num):
