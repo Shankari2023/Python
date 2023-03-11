@@ -17,8 +17,8 @@ for i in b.values():
 print(b_str)
 
 
-
-###a = ["apple" , "apple" , "mango" , "mango" , "orange"]
+###Q.No - 2
+#a = ["apple" , "apple" , "mango" , "mango" , "orange"]
 # output = {"apple" : 2 , "mango" : 2 , "orange" : 1}
 # unique fruit list = ["apple" , "mango", "orange"]
 # duplicate fruit list ["apple" , "mango"]
@@ -42,8 +42,61 @@ for i in a:
 print(first_list)
 print(second_list)
 
+###Q.No - 3
+## file 1 : has email (duplicates)
+## file 2 : has email (duplicates)
+## output : common user name in both the file
+#dinesh@gmail
+#dinesh@yahoo
 
 
+a = ["aswin@gmail.com", "aarush@gmail.com", "advay@gmail.com", "nithya@yahoo.com"]
+b = ["ananya@hotmail.com", "jovan@gmail.com", "advay@hotmail.com", "aswin@yahoo.com"]
+
+print(type(a))
+print(len(a))
+print(a[3])
+
+#a.append(b)
+#print(a)
+
+a.extend(b)                 #Also use, print(a+b)
+print(a)
+
+for i in a:
+    print(i)
+
+i = i.split('@')
+print(i)
+b=[i.split('@') for i in a]
+print(b)
+
+i=0
+for i in b:
+    print(b)
+
+b = [i.split('@')[0] for i in a]
+print(b)
+
+c = [i.split('@')[1] for i in a]
+print(c)
+print(set(c))
+
+'''
+def sort_algo(inp, num):
+    if not isinstance(inp, list):
+        print("inp should be of type")
+    elif not isinstance(num, int):
+        print("num should be of type int")
+    c = sorted(inp[:num])
+    d = inp[num]
+    c.extend(d)
+    return c
+
+a = sort_algo([500,20, 15, 1, 1, 3])
+print(a)
+
+'''
 
 
 
